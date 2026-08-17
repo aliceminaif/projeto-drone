@@ -25,6 +25,12 @@
     <main>
         <section id="container">
             <div class="destaque">
+                
+                    <video class="video-background" autoplay muted loop playsinline>
+                        <source src="img/dronevoando.webm" type="video/webm">
+                    </video>
+                     
+                
                 <h4>TECNOLOGIA QUE TRANSFORMA</h4>
                 <h1>Soluções aéreas <br>para o <span class="agro">agro</span></h1>
                 <h5>Drones de pulverização de alta performance para mais produtividade, eficiência e precisão.</h5>
@@ -155,24 +161,10 @@
 
             <div class="texto2espe">
                 <h3>👉Agende agora uma <span class="verde">demonstração gratuíta</span>  na sua fazenda!</h3>
-                <h4>Ou..assista um vídeo de demonstração de nosso drone: </h4>
+                
             </div>
 
-            <button class="botao-video" onclick="abrirVideo()">
-                    ▶ Assistir vídeo
-                </button>
-                <div id="modal-video">
-                    <div class="video-container">
-                        <button class="fechar" onclick="fecharVideo()">
-                            ✕
-                        </button>
-                        <video controls> 
-                            <source src="img/Vídeo2.webm" type="video/webm">
-                        </video> 
-                    </div>
-                </div>
-            </div>
-
+            
             <div class="b-agende-espe">
                 <a href="#agende">
                     <button class="bagende-espe"> 
@@ -183,6 +175,25 @@
                     </button>
                 </a>
             </div>
+            <div class="texto2espe">
+                <h4>Ou..Conheça em detalhes a tecnologia e os recursos do nosso drone: </h4>
+            </div>
+            
+            <button class="botao-video" onclick="abrirVideo()">
+                    ▶ Assistir vídeo
+                </button>
+                <div id="modal-video">
+                    <div class="video-container">
+                        <button class="fechar" onclick="fecharVideo()">
+                            ✕
+                        </button>
+                        <video controls> 
+                            <source src="img/videodrone.webm" type="video/webm">
+                        </video> 
+                    </div>
+                </div>
+            </div>
+
 
         </section>
 
@@ -211,7 +222,7 @@
         <section id="agende">
             <div class="texto-agende">
                 <h1>🎯Pronto para ver de perto?</h1>
-                <h3>Nossa equipe vai até você!</h3>
+                <h3>Nossa equipe vai até você! </h3>
                 <p>Faça um teste gratuito com nosso drone<br>em operação real no seu plantio florestal.<br>
                 Sem compromisso, 100% prático</p>
 
@@ -222,15 +233,17 @@
             <div class="formulario"> 
                 <form>
                     <label for="nome">Nome:</label>
-                    <input type="text">
+                    <input type="text" placeholder="Digite o seu nome...">
 
                     <label for="celular">Celular:</label>
-                    <input type="tel">
+                    <input type="tel" placeholder="Digite o seu celular...">
 
                     <label for="emial">Email:</label>
-                    <input type="email">
-
-                    <button>AGENDAR UMA DEMONSTRAÇÃO</button>
+                    <input type="email" placeholder="Digite o seu email...">
+                    <div class="bt-agende">
+                        <button>AGENDAR UMA DEMONSTRAÇÃO</button>
+                    </div>
+                    
 
                 </form>
             </div>
