@@ -68,7 +68,18 @@ body {
     color: var(--cor-primaria);
     text-shadow: 0 0 7px var(--cor-primaria);
 }
- 
+
+.menu-direito {
+    width: 50%;
+    height: 100%;
+    /* border: solid aqua 1px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .g {
     color: whitesmoke;
 }
@@ -187,6 +198,7 @@ button:hover {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
 }
  
 .destaque {
@@ -379,7 +391,7 @@ h5{
  }
  
  .box-funcoes figure {
-    width: 10%;
+    width: 7%;
     height: 35%;
     border-radius: 50%;
     border: rgb(149, 226, 149) 1px solid;
@@ -857,11 +869,107 @@ h5{
     transform: translateY(-4px);
     transform: scale(0.97);
 }
- 
-@media (min-width: 600px) {
+
+
+.texto-footer {
+    width: 100%;
+    height: 30px;
+    background-color: green ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-footer h2 {
+    color: whitesmoke;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+}
+
+@media (max-width: 600px){
+    .menu{
+        display: none;
+
+    }
+    .cabecalho h1{
+        width: 80%;
+        border: aqua solid 1px;
+    }
+    .destaque{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .destaque h1{
+        font-size: 7vh;
+    }
+
+    .funcoes-texto {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 20px;
+        height: 2rem;
+        text-align: left;
+        padding-top: 0;
+        border: 1px aqua solid;
+
+
+    }
+
+    .funcoes-texto h1{
+        font-size: rem;
+        margin: 0;
+        display: none;
+    }
+    .funcoes-texto h4{
+        font-size: 1.5rem;
+        margin: 0;
+
+        
+    }
+    .funcoes-texto h3 {
+        display: none;
+    }
+    .funcoes-simb figure {
+        display: none;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-funcoes {
+        width: 80%;
+    }
+
+    .box-funcoes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-box {
+        display: none;
+    }
+
+}
+
+@media (min-width: 601px){
+    .menu {
+        display: flex;
+    }
+}
+
+@media (min-width: )
+
+
+/* @media (min-width: 600px) {
     .card-container {
         flex-direction: row; 
         
     }
  
-}
+} */
